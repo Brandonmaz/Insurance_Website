@@ -1,6 +1,8 @@
 import React from 'react'
 import './portfolio.css'
 import IMG1 from '../../assets/certification.png'
+import IMG2 from '../../assets/certification.png'
+import IMG3 from '../../assets/certification.png'
 
 // map array for portfolio article items
 
@@ -14,14 +16,14 @@ const data = [
   },
   {
     id: 2,
-    image: IMG1,
+    image: IMG2,
     title: 'Work 2',
     github: 'http://github.com',
     demo: 'http://github.com',
   },
   {
     id: 3,
-    image: IMG1,
+    image: IMG3,
     title: 'Work 3',
     github: 'http://github.com',
     demo: 'http://github.com',
@@ -42,8 +44,8 @@ const Portfolio = () => {
                 </div>
                   <h3>{title}</h3>
                   <div className="portfolio__item-cta">
-                    <a href={github} className="btn" target='_blank'>Github</a>
-                    <a href={demo} className="btn btn-primary" target='_blank'>Github</a>
+                    <a href={github} className="btn" rel='noreferrer' target='_blank'>Github</a>
+                    <a href={demo} className="btn btn-primary" rel='noreferrer' target='_blank'>Github</a>
                   </div>
               </article>
             )

@@ -1,3 +1,5 @@
+// install google icons
+
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
