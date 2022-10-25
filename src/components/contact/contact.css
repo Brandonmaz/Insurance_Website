@@ -1,3 +1,6 @@
+#contact {
+    background: black;
+}
 .container.contact__container {
     width: 58%;
     display: grid;
@@ -12,14 +15,16 @@
 .contact__option {
     background: var(--color-bg-variant);
     padding: 1.2rem;
-    border-radius: 1.2rem;
+    border-radius: .2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
 }
 .contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
+    color: var(--color-primary);
 }
 .contact__option-icon {
     font-size: 1.5rem;
@@ -30,8 +35,11 @@
     display: inline-block;
     font-size: 0.8rem;
 }
+.contact__option a:hover {
+    color: var(--color-bg);
+}
 .contact__option h5 {
-    color: var(--color-light);
+    color: var(--color-primary);
 }
 /*================FORM================*/
 form {
@@ -39,21 +47,34 @@ form {
     flex-direction: column;
     gap: 1.2rem;
 }
-input, textarea {
+input, .textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
     background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    border: 2px solid var(--color-bg-variant);
     resize: none;
-    color: var(--color-white);
+    color: var(--color-bg);
+    font-size: 1.2rem;
 }
-input::placeholder {
+.textarea::placeholder, input::placeholder {
     color: var(--color-bg-variant);
     font-size: 1rem;
 }
-textarea::placeholder {
-    color: var(--color-bg-variant);
+.textarea:hover, input:hover {
+    background: rgba(166, 204, 252, 0.332);
+    color: var(--color-white);
+}
+.btn.btn-primary-cta {
+    background-color: var(--color-bg-variant);
+    color: var(--color-white);
+    font-size: 1rem;
+    box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
+}
+.btn.btn-primary-cta:hover {
+    background-color: transparent;
+    color: var(--color-primary);
+    border-color: var(--color-bg-variant);
     font-size: 1rem;
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
@@ -62,10 +83,16 @@ textarea::placeholder {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
+    #contact {
+        height: auto;
+    }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
 @media screen and (max-width: 600px) {
     .container.contact__container {
         width: var(--container-width-sm);
+    }
+    #contact {
+        height: auto;
     }
 }

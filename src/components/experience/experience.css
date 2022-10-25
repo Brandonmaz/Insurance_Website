@@ -1,17 +1,23 @@
+#experience {
+    background: brown;
+}
 .experience__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    height: 100vh;
 }
 .experience__container > div {
     background-color: var(--color-bg-variant);
     padding: 2.4rem 5rem;
-    border-radius: 2rem;
+    border-radius: .2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
+    height: fit-content;
 }
 .experience__container > div:hover {
-    background: transparent;
+    background: var(--color-hover);
     border-color: var(--color-primary-variant);
     cursor: default;
 }
@@ -32,6 +38,10 @@
 .experience__details-icon {
     margin-top: 6px;
     color: var(--color-primary);
+}
+.experience__p {
+    font-size: 1.25rem;
+    text-align: center;
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
@@ -56,5 +66,8 @@
         width: 100%;
         padding: 2rem 1rem;
 
+    }
+    #experience {
+        height: auto;
     }
 }

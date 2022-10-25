@@ -55,9 +55,11 @@ const Experience = () => {
             </article>
           </div>
         </div>
+         <p className="experience__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellat pariatur id. Rem amet ducimus inventore unde quibusdam deleniti accusantium numquam neque, corporis modi saepe, magnam optio aut delectus ullam.
+          </p>
         {/* box 1 experience */}
 
-        <div className="experience__backend">
+        {/* <div className="experience__backend">
           <h3>Backend</h3>
           <div className="experience__content">
             <article className="experience__details">
@@ -103,7 +105,7 @@ const Experience = () => {
               </div>
             </article>
           </div>
-        </div>
+        </div> */}
         {/* box 2 experience */}
         </div>
     </section>

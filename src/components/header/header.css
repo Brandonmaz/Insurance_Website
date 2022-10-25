@@ -1,4 +1,11 @@
+/* #header {
+    background: purple;
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+} */
 header {
+    background: purple;
     height: 100vh;
     padding-top: 7rem;
     overflow: hidden;
@@ -56,8 +63,7 @@ header {
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
     header {
-        height: 68vh;
-
+        height: 100vh;
     }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/

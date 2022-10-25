@@ -35,9 +35,9 @@ const About = () => {
               <small>30+ Completed</small>
             </article>
           </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellat pariatur id. Rem amet ducimus inventore unde quibusdam deleniti accusantium numquam neque, corporis modi saepe, magnam optio aut delectus ullam.
+          <p className="about__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellat pariatur id. Rem amet ducimus inventore unde quibusdam deleniti accusantium numquam neque, corporis modi saepe, magnam optio aut delectus ullam.
           </p>
-          <a href="#contact" className="btn btn__primary">Let's Talk</a>
+          <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>
     </section>
