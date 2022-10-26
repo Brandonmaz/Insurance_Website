@@ -1,16 +1,23 @@
 #contact {
-    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("../../assets/family.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    padding-top: 10rem;
+    overflow: hidden;
 }
 .container.contact__container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
+    grid-template-columns: 30% 70%;
     gap: 12%;
 }
 .contact__options {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 2rem;
+    margin-right: 5rem;
 }
 .contact__option {
     background: var(--color-bg-variant);
@@ -24,7 +31,7 @@
 .contact__option:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
-    color: var(--color-primary);
+    color: var(--color-white);
 }
 .contact__option-icon {
     font-size: 1.5rem;
@@ -36,10 +43,21 @@
     font-size: 0.8rem;
 }
 .contact__option a:hover {
-    color: var(--color-bg);
+    color: var(--color-white);
 }
 .contact__option h5 {
-    color: var(--color-primary);
+    color: var(--color-white);
+}
+.container.contact__container button {
+    background-color: transparent;
+    margin-top: 2rem;
+    height: 4rem;
+    border-color: var(--color-primary);
+    border-radius: .2rem;
+}
+.container.contact__container button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }
 /*================FORM================*/
 form {
@@ -51,14 +69,14 @@ input, .textarea {
     width: 100%;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-bg-variant);
+    background: var(--color-primary-variant);
+    border: 2px solid var(--color-bg);
     resize: none;
     color: var(--color-bg);
     font-size: 1.2rem;
 }
 .textarea::placeholder, input::placeholder {
-    color: var(--color-bg-variant);
+    color: var(--color-primary);
     font-size: 1rem;
 }
 .textarea:hover, input:hover {
@@ -85,6 +103,13 @@ input, .textarea {
     }
     #contact {
         height: auto;
+        background-position: center;
+    }
+    .contact__options {
+        margin-right: 0;
+    }
+    .container.contact__container button {
+    margin-bottom: 2rem;
     }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
@@ -94,5 +119,12 @@ input, .textarea {
     }
     #contact {
         height: auto;
+        background-position: center;
+    }
+    .contact__options {
+        margin: auto;
+    }
+    .container.contact__container button {
+    margin-bottom: 2rem;
     }
 }

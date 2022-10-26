@@ -1,5 +1,5 @@
 #about {
-    background: blue;
+    background: grey;
 }
 .about__container {
     display: grid;
@@ -14,6 +14,7 @@
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
+    margin-top: 5rem;
 }
 .about__me-image {
     border-radius: .2rem;
@@ -45,7 +46,7 @@
 }
 .about__icon {
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
 .about__card h5 {
@@ -66,12 +67,12 @@
 @media screen and (max-width: 1024px) {
     .about__container {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        gap: 1rem;
     }
 
     .about__me {
         width: 50%;
-        margin: 2rem auto 4rem;
+        margin: 2rem auto 0;
     }
     .about__content p {
         margin: 1rem 0 1.5rem
@@ -87,16 +88,16 @@
         margin: 0 auto 3rem;
     }
     .about__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
+        grid-template-columns: 1fr;
+        margin: 2rem;
     }
     .about__content {
         text-align: center;
     } 
     .about__content p {
-        margin: 1.5rem 0;
+        margin: 2.5rem 0;
     }
-   .btn.btn-primary {
-       margin-top: 2rem;
+   .about__icon {
+       font-size: 2rem;
    }
 }

@@ -11,17 +11,15 @@ const Header = () => {
     <section id="header">
       <header>
         <div className="container header__container">
-          <h5>Hello I'm</h5>
-          <h1>Brandon Mazikowski</h1>
-          <h5 className="text-light">Insurance Agency Producer</h5>
+          <h2 className="text-light">Brandon Mazikowski</h2>
+          <h1>Farmers Insurance Agency Producer</h1>
+          
           <CTA />
           <HeaderSocials/>
-
-          <div className="me">
+          {/* <div className="me">
             <img src={ME} alt="me" className="" />
-          </div>
-
-          <a href="#contact" className="scroll__down">Scroll Down</a>
+          </div> */}
+          {/* <a href="#contact" className="scroll__down">Scroll Down</a> */}
         </div>
       </header>
     </section>

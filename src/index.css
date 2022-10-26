@@ -18,7 +18,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --color-box-shadow: rgba(32, 31, 31, 0.2);
-    --color-hover: #34346e;
+    --color-hover: #76769198;
 
     --transition: all 400ms ease;
 
@@ -83,7 +83,7 @@ a:hover {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
+    padding: 0.25rem 1.2rem;
     border-radius: 0.2rem;
     cursor: pointer;
     border: 1px solid var(--color-bg);
@@ -92,11 +92,13 @@ a:hover {
 .btn:hover {
     background: var(--color-hover);
     color: var(--color-white);
-    border-color: transparent;
+    border-color: var(--color-white);
+    border-radius: .3rem;
 }
 .btn-primary {
-    /* background-color: var(--color-bg-variant); */
-    color: var(--color-primary);
+    background-color: transparent;
+    color: var(--color-white);
+    /* border-color: var(--color-white); */
      box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
 }
 img {

@@ -19,9 +19,9 @@ const Footer = () => {
           <li><a href="contact">Contact</a></li>
         </ul>
         <div className="footer__social">
-          <a href="htto://facebook.com"><AiOutlineFacebook/></a>
-          <a href="htto://instagram.com"><BsInstagram/></a>
-          <a href="htto://twitter.com"><FiTwitter/></a>
+          <a href="htto://facebook.com"><AiOutlineFacebook className="footer__social-icon"/></a>
+          <a href="htto://instagram.com"><BsInstagram className="footer__social-icon"/></a>
+          <a href="htto://twitter.com"><FiTwitter className="footer__social-icon"/></a>
         </div>
         <div className="footer__copyright">
           <small>&copy; MazingWebsites. All rights reserved.</small>
