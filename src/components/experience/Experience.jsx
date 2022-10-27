@@ -1,5 +1,4 @@
-import React, {useEffect} from 'react'
-import Aos from 'aos'
+import React from 'react'
 import 'aos/dist/aos.css'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
