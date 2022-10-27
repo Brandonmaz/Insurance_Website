@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 
@@ -8,7 +10,7 @@ const Experience = () => {
       <h5>What Skills I Have</h5>
       <h2>My Experience</h2>
       <div className="container experience__container">
-        <div className="experience__frontend">
+        <div data-aos="fade-right" className="experience__frontend">
           <h3>Frontend</h3>
           <div className="experience__content">
             <article className="experience__details">
@@ -55,7 +57,7 @@ const Experience = () => {
             </article>
           </div>
         </div>
-         <p className="experience__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellat pariatur id. Rem amet ducimus inventore unde quibusdam deleniti accusantium numquam neque, corporis modi saepe, magnam optio aut delectus ullam.
+         <p data-aos="fade-left" className="experience__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas repellat pariatur id. Rem amet ducimus inventore unde quibusdam deleniti accusantium numquam neque, corporis modi saepe, magnam optio aut delectus ullam.
           </p>
         {/* box 1 experience */}
 

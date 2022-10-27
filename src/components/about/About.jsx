@@ -1,5 +1,6 @@
 import React from 'react'
 import './about.css'
+import 'aos/dist/aos.css'
 import ME from '../../assets/introImg.jpg'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
@@ -11,12 +12,12 @@ const About = () => {
       <h2>.</h2>
 
       <div className="container about__container">
-        <div className="about__me">
+        <div data-aos="fade-right" className="about__me">
           <div className="about__me-image">
             <img src={ME} alt="" />
           </div>
         </div>
-        <div className="about__content">
+        <div data-aos="fade-left" className="about__content">
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />

@@ -1,6 +1,7 @@
 // npm install emailjs-com --save
 import React, {useRef}from 'react'
 import './contact.css'
+import 'aos/dist/aos.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FiPhoneCall} from 'react-icons/fi'
 import {BsChatSquareText} from 'react-icons/bs'
@@ -20,7 +21,7 @@ const Contact = () => {
   return (
     <section id="contact">
       <div className="container contact__container">
-        <div className="contact__options">
+        <div data-aos="fade-right" className="contact__options">
           <article className="contact__option">
             <HiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
@@ -47,11 +48,25 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Name' required />
-          <input type="email" name='email' placeholder='Email' required />
+        <form  data-aos="fade-left" ref={form} onSubmit={sendEmail}>
+          <div className="table">
+            <input type="text" name='first name' placeholder='First Name' required />
+            <input type="text" name='last name' placeholder='Last Name' required />
+          </div>
+          <input type="email" name='email' placeholder='Email'/>
+          <div className="table">
+            <input type="text" name='company' placeholder='Company'/>
+            <input type="text" name='phone' placeholder='Phone' required />
+          </div>
+          <select className="form__options" name="insurance" required>
+            <option selected='true' disabled='disabled'>Choose Product Type</option>
+            <option value="auto">Auto</option>
+            <option value="home">Home</option>
+            <option value="life">Life</option>
+            <option value="umbrella">Umbrella</option>
+          </select>
           <textarea className="textarea" type="message" name='message' rows='7' placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary-cta'>GET MY ATTENTION</button>
+          <button type='submit' className='btn btn-primary-cta'>GET MY ATTENTION<i className="arrow right"></i><i className="arrow right"></i><i className="arrow right"></i></button>
         </form>
       </div>
     </section>

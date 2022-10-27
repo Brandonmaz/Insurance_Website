@@ -1,5 +1,6 @@
 #about {
-    background: grey;
+    background: url(../../assets/background.png);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 .about__container {
     display: grid;
@@ -58,7 +59,8 @@
 }
 .about__content p {
     margin: 2rem 0 2.6rem;
-    color: var(--color-light)
+    color: white;
+    font-weight: 400;
 }
 .about__p {
     font-size: 1.25rem;

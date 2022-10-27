@@ -1,5 +1,5 @@
 #experience {
-    background: brown;
+    background: rgb(255, 255, 255);
 }
 .experience__container {
     display: grid;
@@ -41,7 +41,9 @@
 }
 .experience__p {
     font-size: 1.25rem;
-    text-align: center;
+    /* text-align: center; */
+    font-weight: 500;
+    color: black;
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {

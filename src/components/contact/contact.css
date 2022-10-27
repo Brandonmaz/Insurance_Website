@@ -5,6 +5,7 @@
     position: relative;
     height: 100vh;
     padding-top: 10rem;
+    padding-bottom: 50rem;
     overflow: hidden;
 }
 .container.contact__container {
@@ -34,7 +35,7 @@
     color: var(--color-white);
 }
 .contact__option-icon {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-bottom: 0.5rem;
 }
 .contact__option a {
@@ -59,30 +60,6 @@
     background-color: var(--color-primary);
     color: var(--color-white);
 }
-/*================FORM================*/
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
-}
-input, .textarea {
-    width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: var(--color-primary-variant);
-    border: 2px solid var(--color-bg);
-    resize: none;
-    color: var(--color-bg);
-    font-size: 1.2rem;
-}
-.textarea::placeholder, input::placeholder {
-    color: var(--color-primary);
-    font-size: 1rem;
-}
-.textarea:hover, input:hover {
-    background: rgba(166, 204, 252, 0.332);
-    color: var(--color-white);
-}
 .btn.btn-primary-cta {
     background-color: var(--color-bg-variant);
     color: var(--color-white);
@@ -95,6 +72,56 @@ input, .textarea {
     border-color: var(--color-bg-variant);
     font-size: 1rem;
 }
+.arrow.right {
+    border: solid rgb(250, 241, 241);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 5px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/*================FORM================*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.table {
+    display: flex;
+}
+.form__name {
+    display: flex;
+}
+.form__options {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-primary-variant);
+    border: 2px solid var(--color-bg);
+    resize: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+input, .textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background: var(--color-primary-variant);
+    border: 2px solid var(--color-bg);
+    resize: none;
+    color: var(--color-white);
+    font-size: 1.2rem;
+}
+.textarea::placeholder, input::placeholder {
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+.textarea:hover, input:hover {
+    background: rgba(166, 204, 252, 0.332);
+    color: var(--color-white);
+}
+
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
     .container.contact__container {
@@ -104,6 +131,7 @@ input, .textarea {
     #contact {
         height: auto;
         background-position: center;
+        padding-bottom: 0rem;
     }
     .contact__options {
         margin-right: 0;

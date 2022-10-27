@@ -1,5 +1,5 @@
 #testimonials {
-    background: grey;
+    background: rgb(255, 255, 255);
 }
 .container.testimonials__container {
     height: 100vh;
@@ -7,8 +7,8 @@
     place-items: center;
 }
 .testimonials__container {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 80%;
     padding-bottom: 4rem;
     font-size: 1.5rem;
 }

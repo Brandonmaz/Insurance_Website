@@ -71,14 +71,28 @@ header {
     background: var(--color-primary);
 }
 /*========== SCROLL DOWN ==========*/
-/* .scroll__down {
+.scroll__down {
     position: absolute;
     right: -2.3rem;
-    bottom: 7rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 2rem;
-} */
+}
+.arrow__down {
+    border: solid var(--color-light);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+/*=========== LARGE QUERIES (Medium devices, tablets) ========*/
+@media screen and (min-width: 1025px) {
+    .scroll__down {
+        display: none;
+    }
+}
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
     header {
@@ -86,10 +100,11 @@ header {
         background-position: center;
     }
     .cta {
-        font-size: 1.5rem;
+        display: none;
     }
     .scroll__down {
-        display: none;
+        top: 30rem;
+        right: -5rem;
     }
     .header__socials {
         font-size: 2rem;
@@ -116,7 +131,9 @@ header {
         background-position: center;
     }
     .scroll__down {
-        display: none;
+        font-size: 1.25rem;
+        top: 20rem;
+        right: -4.5rem
     }
     .header__socials {
         font-size: 1.5rem;

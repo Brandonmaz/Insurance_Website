@@ -1,4 +1,5 @@
 import React from 'react'
+import 'aos/dist/aos.css'
 import './services.css'
 import {BiCheck} from 'react-icons/bi'
 import {FaCarSide} from 'react-icons/fa'
@@ -11,7 +12,7 @@ const Services = () => {
       <h5>What Farmers Offer</h5>
       <h2>Services</h2>
       <div className="container services__container">
-        <article className="service">
+        <article data-aos="fade-right" className="service">
           <div className="service__head">
             <h3><FaCarSide className="service__head-icon"/></h3>
           </div>
@@ -39,7 +40,7 @@ const Services = () => {
           </ul>
         </article>
         {/* end box 1 */}
-        <article className="service">
+        <article data-aos="fade-up" className="service">
           <div className="service__head">
             <h3><GiHouse className="service__head-icon"/></h3>
           </div>
@@ -71,7 +72,7 @@ const Services = () => {
           </ul>
         </article>
         {/* end box 2 */}
-        <article className="service">
+        <article data-aos="fade-left" className="service">
           <div className="service__head">
             <h3><FaUmbrella className="service__head-icon"/></h3>
           </div>
