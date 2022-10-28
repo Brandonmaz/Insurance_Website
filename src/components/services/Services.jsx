@@ -40,7 +40,7 @@ const Services = () => {
           </ul>
         </article>
         {/* end box 1 */}
-        <article data-aos="fade-up" className="service">
+        <article data-aos="fade-down" className="service">
           <div className="service__head">
             <h3><GiHouse className="service__head-icon"/></h3>
           </div>
@@ -65,14 +65,11 @@ const Services = () => {
               <BiCheck className="service__list-icon" />
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
             </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
+            
           </ul>
         </article>
         {/* end box 2 */}
-        <article data-aos="fade-left" className="service">
+        <article data-aos="fade-up" className="service">
           <div className="service__head">
             <h3><FaUmbrella className="service__head-icon"/></h3>
           </div>
@@ -100,6 +97,34 @@ const Services = () => {
           </ul>
         </article>
         {/* end box 3 */}
+        <article data-aos="fade-left" className="service">
+          <div className="service__head">
+            <h3><FaUmbrella className="service__head-icon"/></h3>
+          </div>
+          <ul className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+          </ul>
+        </article>
+        {/* end box 4 */}
       </div>
     </section>
   )

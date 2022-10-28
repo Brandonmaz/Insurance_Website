@@ -48,7 +48,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form  data-aos="fade-left" ref={form} onSubmit={sendEmail}>
+        <form  className="form" data-aos="fade-left" ref={form} onSubmit={sendEmail}>
           <div className="table">
             <input type="text" name='first name' placeholder='First Name' required />
             <input type="text" name='last name' placeholder='Last Name' required />

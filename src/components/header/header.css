@@ -106,6 +106,9 @@ header {
         top: 30rem;
         right: -5rem;
     }
+    .arrow__down {
+        padding: 5px;
+    }
     .header__socials {
         font-size: 2rem;
         position: absolute;
@@ -134,6 +137,9 @@ header {
         font-size: 1.25rem;
         top: 20rem;
         right: -4.5rem
+    }
+    .arrow__down {
+        padding: 3px;
     }
     .header__socials {
         font-size: 1.5rem;

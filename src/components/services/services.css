@@ -4,9 +4,10 @@
 }
 .services__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    height: 100vh;
+    height: auto;
+    place-items: center;
 }
 .service {
     background: var(--color-bg-variant);
@@ -15,6 +16,8 @@
     height: fit-content;
     transition: var(--transition);
     box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
+    width: 80%;
+    margin-bottom: 2rem;
 }
 .service:hover {
     background: transparent;
@@ -50,12 +53,13 @@
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
     .services__container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr;
+        gap: 4rem;
         height: auto;
     }
     .service {
         height: auto;
+        width: 80%;
     }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
@@ -64,5 +68,9 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
         height: auto;
+    }
+    .service {
+        height: auto;
+        width: auto;
     }
 }

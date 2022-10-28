@@ -8,9 +8,10 @@ import AVTR3 from '../../assets/intro.png'
 import AVTR4 from '../../assets/intro.png'
 import AVTR5 from '../../assets/intro.png'
 import AVTR6 from '../../assets/intro.png'
-import {Pagination, Navigation} from 'swiper';
+import {Pagination, Navigation, EffectCube} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import "swiper/css/effect-cube";
 import 'swiper/css/pagination';
 
 // map array for testimonial article items
@@ -53,17 +54,19 @@ const Testimonials = () => {
       <h5>Review from Clients</h5>
       <h2>Testimonials</h2>
       <div className="container testimonials__container">
-      <Swiper className="testimonials__container"
-        modules={[Pagination, Navigation]}
-        spaceBetween={50}
-        slidesPerView={1}
-        loop={true}
-        navigation={true}
-        pagination={{
-          dynamicBullets: true,
-          clickable: true
+      <Swiper
+        effect={"cube"}
+        grabCursor={true}
+        cubeEffect={{
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: .94,
         }}
-        >
+        pagination={true}
+        modules={[EffectCube, Pagination]}
+        className="mySwiper"
+      >
         {
           data.map(({avatar, name, review}, index) => {
             return (
