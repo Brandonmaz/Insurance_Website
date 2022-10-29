@@ -8,10 +8,11 @@ import AVTR3 from '../../assets/intro.png'
 import AVTR4 from '../../assets/intro.png'
 import AVTR5 from '../../assets/intro.png'
 import AVTR6 from '../../assets/intro.png'
-import {Pagination, Navigation, EffectCube} from 'swiper';
+import {Pagination, EffectCube, EffectCoverflow} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/effect-cube";
+import "swiper/css/effect-coverflow"
 import 'swiper/css/pagination';
 
 // map array for testimonial article items
@@ -50,27 +51,30 @@ const data = [
 ]
 const Testimonials = () => {
   return (
-    <section id="testimonials">
-      <h5>Review from Clients</h5>
-      <h2>Testimonials</h2>
-      <div className="container testimonials__container">
+      <section id="testimonials">
       <Swiper
-        effect={"cube"}
+        effect={"coverflow"}
         grabCursor={true}
-        cubeEffect={{
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
           shadow: true,
-          slideShadows: true,
           shadowOffset: 20,
-          shadowScale: .94,
+          shadowScale: 0.94,
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }}
         pagination={true}
-        modules={[EffectCube, Pagination]}
-        className="mySwiper"
+        modules={[EffectCoverflow, Pagination]}
+        className="swiper mySwiper"
       >
         {
           data.map(({avatar, name, review}, index) => {
             return (
-              <SwiperSlide key={index}className="testimonial">
+              <SwiperSlide key={index} className="testimonial">
                 <div className="client__avatar">
                   <img src={avatar} alt="Avatar One" />
                 </div>
@@ -81,8 +85,8 @@ const Testimonials = () => {
           })
         }
       </Swiper>
-      </div>
-    </section>
+      </section>
+ 
   )
 }
 

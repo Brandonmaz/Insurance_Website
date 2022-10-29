@@ -1,8 +1,7 @@
 #testimonials {
     background: rgb(168, 168, 168);
     position: relative;
-    height: 100%;
-    margin: 0;
+    height: 100vh;
     padding: 0;
 }
 .container.testimonials__container {
@@ -31,8 +30,9 @@
     background: var(--color-bg);
     text-align: center;
     padding: 2rem;
-    border-radius: .5rem .5rem .5rem .5rem;
+    /* border-radius: .5rem .5rem .5rem .5rem; */
     user-select: none;
+    width: 30rem !important;
 }
 .client__review {
     color: var(--color-white);
@@ -42,23 +42,27 @@
     margin: .8rem auto 0;
 }
 .swiper {
-    width: 40rem;
-    height: 40rem;
-    position: absolute;
-}
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
+    width: 100% !important;
+    height: 100% !important;
+    background-color:rgb(255, 255, 255);
+    padding: 9rem !important;
 }
 .swiper-pagination-bullets {
-    margin: -3rem auto;
+    margin: 3rem auto;
 }
 .swiper-pagination-bullet {
-    background-color: rgb(255, 255, 255) !important;
+    background-color: rgb(26, 26, 26) !important;
 }
-.swiper-cube-shadow {
-    height: 640px; 
-    transform: translate3d(0px, 400px, -320px) rotateX(90deg) rotateZ(0deg) scale(1) !important;
+
+.swiper-slide-shadow-right{
+    height: 540px !important;
+    filter: blur(20px);
+    transform: translate3d(-10px, 400px, -400px) rotateX(90deg) rotateZ(0deg) scale(1) !important;
+}
+.swiper-slide-shadow-left{
+    height: 540px !important; 
+    filter: blur(20px);
+    transform: translate3d(10px, 400px, -400px) rotateX(90deg) rotateZ(0deg) scale(1) !important;
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
