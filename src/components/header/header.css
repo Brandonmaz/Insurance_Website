@@ -36,23 +36,6 @@ header {
     bottom: 18rem;
     left: 1rem;
 }
-/*========== CTA ==========*/
-.cta {
-    background: rgba(0,0,0,0.3);
-    margin-top: -2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: right;
-    font-size: 1.5rem;
-    z-index: 2;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 7rem;
-    border-radius: .3rem;
-    display: flex;
-    backdrop-filter: blur(15px);
-}
 /*========== SOCIALS ==========*/
 .header__socials {
     display: flex;
@@ -60,7 +43,7 @@ header {
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
+    left: -5rem;
     /* bottom: 3rem; */
     font-size: 2rem;
 }
@@ -77,42 +60,37 @@ header {
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 2rem;
+    top: 30rem;
+    right: -10rem;
 }
 .arrow__down {
     border: solid var(--color-light);
     border-width: 0 3px 3px 0;
     display: inline-block;
     margin-left: 1rem;
-    padding: 3px;
+    padding: 5px;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
 }
-/*=========== LARGE QUERIES (Medium devices, tablets) ========*/
-@media screen and (min-width: 1025px) {
-    .scroll__down {
-        display: none;
-    }
-}
+
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
     header {
         height: 100vh;
         background-position: center;
     }
-    .cta {
-        display: none;
-    }
     .scroll__down {
         top: 30rem;
         right: -5rem;
     }
     .arrow__down {
-        padding: 5px;
+        padding: 4px;
     }
     .header__socials {
         font-size: 2rem;
         position: absolute;
         top: .1rem;
+        left: 0;
     }
     .header__container h1 {
         left: 5rem;
@@ -145,9 +123,6 @@ header {
         font-size: 1.5rem;
         position: absolute;
         top: .1rem;
-    }
-    .cta {
-        display: none;
     }
     .header__container h1 {
         font-size: 1.1rem;

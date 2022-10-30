@@ -16,7 +16,7 @@ import "swiper/css/effect-coverflow"
 import 'swiper/css/pagination';
 
 // map array for testimonial article items
-
+// keep max words to less than 60 and all characters to no more than 500
 const data = [
   {
     avatar: AVTR1,
