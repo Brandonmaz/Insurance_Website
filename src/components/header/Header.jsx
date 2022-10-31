@@ -5,7 +5,6 @@ import React, { useEffect } from 'react'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import './header.css'
-import CTA from './CTA'
 import HeaderSocials from './HeaderSocials'
 
 const Header = () => {
@@ -18,8 +17,6 @@ const Header = () => {
         <div className="container header__container">
           <h2 className="text-light">Brandon Mazikowski</h2>
           <h1>Farmers Insurance Agency Producer</h1>
-          
-          {/* <CTA /> */}
           <HeaderSocials/>
           {/* <div className="me">
             <img src={ME} alt="me" className="" />

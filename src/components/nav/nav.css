@@ -1,7 +1,7 @@
 @media screen and (min-width: 1025px) {
-#navbar {
-    background: var(--color-bg);
-    color: rgb(255, 255, 255);
+.navbar {
+    background: transparent;
+    color: var(--color-white);
     position: fixed;
     top: 0;
     height: 5rem;
@@ -9,10 +9,17 @@
     width: 100%;
     z-index: 10;
 }
+.navbar.active {
+    background: var(--color-white);
+    color: var(--color-bg-variant);
+}
+.navbar.active li a {
+    color: black;
+}
 .nav-wrapper {
     margin: auto;
     text-align: center;
-    width: 70%;
+    width: 90%;
 }
 .logo {
     float: left;
@@ -22,14 +29,31 @@
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-#navbar a {
-    display: block;
+.contact__menu {
     float: right;
+    font-size: 1em;
+    height: 60px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.contact__menu li {
+    float: left;
+    margin-right: auto;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.contact__menu-info.number {
+    font-size: .9rem;
+}
+.navbar a {
+    display: block;
+    float: left;
     list-style: none;
     text-align: left;
     transition: transform 0.5s ease-out;
 }
-#navbar li a {
+.navbar li a {
     color: var(--color-white);
     font-size: .9em;
     height: 50px;
@@ -39,36 +63,36 @@
     position: relative;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all 0.5s ease;
+    transition: all 0.1s ease;
 }
-#navbar li a:hover {
+.navbar li a:hover {
     color: var(--color-primary);
     transition: all 1s ease;
 }
-#navbar li a:before, #navbar li a:after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 1px;
-  bottom: -5px;
-  background: var(--color-primary);
+.navbar li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -5px;
+    background: var(--color-primary);
 }
-#navbar li a:before {
-  left: 0;
-  transition: 0.5s;
+.navbar li a:before {
+    left: 0;
+    transition: 0.3s;
 }
-#navbar li a:after {
-  background: var(--color-primary);
-  right: 0;
+.navbar li a:after {
+    background: var(--color-primary);
+    right: 0;
 }
-#navbar li a:hover:before {
-  background: var(--color-primary);
-  width: 100%;
-  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+.navbar li a:hover:before {
+    background: var(--color-primary);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
 }
-#navbar li a:hover:after {
-  background: transparent;
-  width: 100%;
+.navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
 }
 .menu__icons {
     display: none;
@@ -78,66 +102,52 @@
 .menu__words {
     display: none;
 }
-nav {
-    /* background: rgba(0,0,0,0.3);
+.contact__menu-info {
+    display: none;
+}
+.navbar {
+    background: rgba(0,0,0,0.3);
     width: max-content;
     display: block;
-    padding: 0.7rem 1.7rem;
-    z-index: 2;
+    padding: .7rem 1.7rem;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 2rem;
-    display: flex;
-    gap: 2rem;
     border-radius: .5rem;
-    backdrop-filter: blur(15px); */
-    background: white;
+    bottom: 1rem;
+    height: auto;
+    top: 1;
+    backdrop-filter: blur(15px);
     color: rgb(13, 26, 38);
-    position: fixed;
-    top: 0;
-    height: 60px;
-    line-height: 60px;
-    width: 100%;
     z-index: 10;
 }
-.nav-wrapper {
-    margin: auto;
-    text-align: center;
-    width: 70%;
+#menu {
+    display: inline-flex;
 }
-.logo {
+nav a {
+    background: transparent;
+    padding: 1rem;
+    border-radius: 20%;
+    display: flex;
+    color: var(--color-light);
+    font-size: 1.5rem;
+}
+nav a:hover {
+    background: rgba(0,0,0,0.3);
+}
+nav .active {
+    background: var(--color-primary-variant);
+    color: var(--color-white);
+}
+/* .logo {
     float: left;
     margin-left: 28px;
     font-size: 1.5em;
     height: 60px;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-#navbar a {
-    display: block;
-    float: right;
-    list-style: none;
-    /* margin-right: 14px; */
-    margin-top: -2px;
-    text-align: right;
-    transition: transform 0.5s ease-out;
-}
-/* nav a {
-    background: transparent;
-    padding: 0.9rem;
-    border-radius: 50%;
-    display: flex;
-    color: var(--color-light);
-    font-size: 1.5rem;
 } */
-/* nav a:hover {
-    background: rgba(0,0,0,0.3);
-}
-nav .active {
-    background: var(--color-primary-variant);
-    color: var(--color-bg-variant);
-} */
+
 }
 @media screen and (max-width: 600px) {
     nav {
