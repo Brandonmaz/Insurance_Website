@@ -1,5 +1,5 @@
-#testimonials {
-    background: rgb(168, 168, 168);
+.testimonials {
+    /* background: rgb(0, 0, 0); */
     position: relative;
     height: 100vh;
     padding: 0;
@@ -41,13 +41,13 @@
     height: 100% !important;
 }
 .swiper-slide-active {
-    background-color: rgb(30, 30, 30);
+    background-color: var(--color-bg-variant);
 }
 .swiper-pagination-bullets {
     margin: 3rem auto;
 }
 .swiper-pagination-bullet {
-    background-color: var(--color-bg-variant) !important;
+    background-color: var(--color-primary) !important;
     /* margin: .5rem !important; */
 }
 .swiper-slide-shadow-right{
@@ -60,7 +60,7 @@
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px){
-    #testimonials {
+    .testimonials {
         height: 85vh;
     }
     .client__review {
@@ -87,7 +87,7 @@
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
 @media screen and (max-width: 600px) {
-    #testimonials {
+    .testimonials {
         height: 100vh;
     }
     .client__review {

@@ -1,5 +1,21 @@
-#experience {
+.experience {
     background: rgb(255, 255, 255);
+}
+.experience {
+    height: 100vh;
+    position:relative;
+    z-index:0;
+}
+.experience::before {
+    content:"";
+    position: absolute;
+    z-index:-1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%);
+    background-color: var(--color-background);
 }
 .experience__container {
     display: grid;
@@ -62,14 +78,9 @@
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
 @media screen and (max-width: 600px) {
     .experience__container {
-        gap: 1rem;
-    }
-    .experience__container > div {
-        width: 100%;
-        padding: 2rem 1rem;
-
-    }
-    #experience {
         height: auto;
+    }
+    .experience__container p {
+        margin: 1rem 0;
     }
 }

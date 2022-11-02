@@ -51,7 +51,7 @@ const data = [
 ]
 const Testimonials = () => {
   return (
-      <section id="testimonials">
+      <section className="testimonials">
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

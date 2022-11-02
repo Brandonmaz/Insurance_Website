@@ -10,11 +10,11 @@
     z-index: 10;
 }
 .navbar.active {
-    background: var(--color-white);
-    color: var(--color-bg-variant);
+    background: var(--color-bg-variant);
+    color: var(--color-primary);
 }
 .navbar.active li a {
-    color: black;
+    color: var(--color-white);
 }
 .nav-wrapper {
     margin: auto;

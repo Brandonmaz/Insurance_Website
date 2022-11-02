@@ -10,11 +10,11 @@
     text-decoration: none;
 }
 :root {
-    --color-background: #4d4c4c;
+    --color-background: #89898986;
     --color-bg: #2b3238;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255,0.4);
+    --color-bg-variant: #001233;
+    --color-primary: #FF595A;
+    --color-primary-variant: #ff59596a;
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
     --color-box-shadow: rgba(32, 31, 31, 0.2);
@@ -108,21 +108,21 @@ img {
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width:1024px) {
-    .container {
+    /* .container {
         width: var(--container-width-md);
     }
     section {
         height: auto;
-    }
+    } */
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
 @media screen and (max-width: 600px) {
-    .container {
+    /* .container {
         width: var(--container-width-sm);
-    }
-    section {
+    } */
+    /* section {
         height: auto;
-    }
+    } */
     section > h2 {
         margin-bottom: 2rem;
     }
