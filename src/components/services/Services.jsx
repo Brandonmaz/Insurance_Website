@@ -51,7 +51,7 @@ const Services = () => {
       </div> */}
 
       <div className="container services__container">
-        <article data-aos="fade-down" className="service service__auto">
+        <article data-aos="fade-right" className="service service__auto">
           <div className="text">
           <h1>Auto</h1>
           </div>
@@ -61,12 +61,12 @@ const Services = () => {
           <h1>Home</h1>
           </div>
         </article>
-        <article data-aos="fade-down" className="service service__life">
+        <article data-aos="fade-up" className="service service__life">
           <div className="text">
           <h1>Life</h1>
           </div>
         </article>
-        <article data-aos="fade-down" className="service service__umbrella">
+        <article data-aos="fade-left" className="service service__umbrella">
           <div className="text">
           <h1>Umbrella</h1>
           </div>

@@ -5,7 +5,7 @@
 .services__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 2rem;
     /* height: auto; */
     place-items: center;
 }

@@ -1,8 +1,8 @@
-
 #about {
     display: flex;
     position:relative;
     background-image: url(../../assets/jelly-fish.gif);
+    /* background-image: url(../../assets/sparkle.gif); */
     background-position: right;
     background-size: 40% 100%;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ hr.solid-two {
         grid-template-columns: 1fr;
     }
     #about {
-    background-image: url(../../assets/jelly-fish.gif);
+    /* background-image: url(../../assets/jelly-fish.gif); */
     background-position:top -100px right -50px;
     background-size: 100% 30%;;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ hr.solid-two {
         grid-template-columns: 1fr;
     }
     #about {
-    background-image: url(../../assets/jelly-fish.gif);
+    /* background-image: url(../../assets/jelly-fish.gif); */
     background-position:top -100px right 50px;
     background-size: 100% 25%;
     background-repeat: no-repeat;
