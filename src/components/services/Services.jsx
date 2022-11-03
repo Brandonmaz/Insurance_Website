@@ -1,130 +1,76 @@
 import React from 'react'
 import 'aos/dist/aos.css'
 import './services.css'
+import CAR from'../../assets/accident.jpeg'
+import HOME from'../../assets/home.jpeg'
 import {BiCheck} from 'react-icons/bi'
 import {FaCarSide} from 'react-icons/fa'
 import {GiHouse} from 'react-icons/gi'
 import {FaUmbrella} from 'react-icons/fa'
 
+
+const data = [
+  {
+    image: CAR,
+    name: 'Auto',
+    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+  },
+  {
+    image: HOME,
+    name: 'Home',
+    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+  },
+  {
+    image: CAR,
+    name: 'Home',
+    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+  },
+  {
+    image: CAR,
+    name: 'Home',
+    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+  },
+]
 const Services = () => {
   return (
     <section id="services">
-      <h5>What Farmers Offer</h5>
-      <h2>Services</h2>
+      {/* <div className="container services__container">
+      {
+          data.map(({image, name, info}) => {
+            return (
+              <article data-aos="fade-down" className="service">
+                  <img src={image} alt=""/>
+                <div className="text">
+                  <h1>{name}</h1>
+                  <p>{info}</p>
+                </div>
+              </article>
+            )
+          })
+        }
+      </div> */}
+
       <div className="container services__container">
-        <article data-aos="fade-right" className="service">
-          <div className="service__head">
-            <h3><FaCarSide className="service__head-icon"/></h3>
+        <article data-aos="fade-down" className="service service__auto">
+          <div className="text">
+          <h1>Auto</h1>
           </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
         </article>
-        {/* end box 1 */}
-        <article data-aos="fade-down" className="service">
-          <div className="service__head">
-            <h3><GiHouse className="service__head-icon"/></h3>
+        <article data-aos="fade-down" className="service service__home">
+          <div className="text">
+          <h1>Home</h1>
           </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            
-          </ul>
         </article>
-        {/* end box 2 */}
-        <article data-aos="fade-up" className="service">
-          <div className="service__head">
-            <h3><FaUmbrella className="service__head-icon"/></h3>
+        <article data-aos="fade-down" className="service service__life">
+          <div className="text">
+          <h1>Life</h1>
           </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
         </article>
-        {/* end box 3 */}
-        <article data-aos="fade-left" className="service">
-          <div className="service__head">
-            <h3><FaUmbrella className="service__head-icon"/></h3>
+        <article data-aos="fade-down" className="service service__umbrella">
+          <div className="text">
+          <h1>Umbrella</h1>
           </div>
-          <ul className="service__list">
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            </li>
-          </ul>
         </article>
-        {/* end box 4 */}
       </div>
     </section>
   )

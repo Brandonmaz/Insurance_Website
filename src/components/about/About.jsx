@@ -4,7 +4,7 @@ import 'aos/dist/aos.css'
 
 const About = () => {
   return (
-    <section className="about">
+    <section id="about">
       <div className="container about__container">
         <div data-aos="fade-up" className="about__content">
           <div className="about__cards">
@@ -39,5 +39,4 @@ const About = () => {
     </section>
   )
 }
-
 export default About

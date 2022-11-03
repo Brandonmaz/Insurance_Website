@@ -1,12 +1,12 @@
-.experience {
+#experience {
     background: rgb(255, 255, 255);
 }
-.experience {
+#experience {
     height: 100vh;
     position:relative;
     z-index:0;
 }
-.experience::before {
+#experience::before {
     content:"";
     position: absolute;
     z-index:-1;

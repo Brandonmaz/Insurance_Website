@@ -1,50 +1,47 @@
+#services {
+    background-color: var(--color-bg-variant);
+    padding: 100px 0 100px 0;
+}
 .services__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    height: auto;
+    gap: 1rem;
+    /* height: auto; */
     place-items: center;
 }
 .service {
-    background: var(--color-bg-variant);
-    border-radius: .2rem .2rem .2rem .2rem;
-    border: 1px solid var(--color-primary);
-    height: fit-content;
-    transition: var(--transition);
-    box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
-    width: 80%;
-    margin-bottom: 2rem;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
-.service:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
+.service__auto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), var(--color-bg-variant)), url(../../assets/accident.jpeg);
 }
-.service__head {
-    background: var(--color-primary);
-    border-radius: .2rem .2rem .2rem .2rem;
-    box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+.service__home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), var(--color-bg-variant)), url(../../assets/home.jpeg);
 }
-.service__head h3 {
-    color: var(--color-bg);
-    font-size: 5rem;
+.service__life {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), var(--color-bg-variant)), url(../../assets/life.jpeg);
+}
+.service__umbrella {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), var(--color-bg-variant)), url(../../assets/umbrella.jpeg);
+}
+.service.service:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 0px 1px var(--color-primary), 1px 1px 1px 1px var(--color-bg-variant);
+    border: 15px solid var(--color-bg-variant);
+    transition: .8s;
+}
+.text {
     text-align: center;
-}
-.service__list {
-    padding: 2rem;
-    box-shadow: 0 4px 8px 0 var(--color-box-shadow), 0 6px 20px 0 var(--color-box-shadow);
-}
-.service__list li {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.8rem;
-}
-.service__list-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: var(--color-primary);
-    margin-top: 2px;
-}
-.service__list p {
-    font-size: 0.9rem;
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
@@ -54,8 +51,8 @@
         height: auto;
     }
     .service {
-        height: auto;
-        width: 80%;
+        height: 50vh;
+        width: 100%;
     }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
@@ -66,7 +63,7 @@
         height: auto;
     }
     .service {
-        height: auto;
-        width: auto;
+        height: 30vh;
+        width: 100%;
     }
 }
