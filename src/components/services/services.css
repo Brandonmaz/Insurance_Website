@@ -1,12 +1,14 @@
 #services {
     background-color: var(--color-bg-variant);
-    padding: 100px 0 100px 0;
+    padding: 200px 0 200px 0;
+}
+.container.services__container {
+    width: 95%;
 }
 .services__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    /* height: auto; */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
     place-items: center;
 }
 .service {
@@ -29,13 +31,16 @@
 .service__umbrella {
     background-image: linear-gradient(rgba(255, 255, 255, 0.0), var(--color-bg-variant)), url(../../assets/umbrella.jpeg);
 }
+.service__commercial {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.0), var(--color-bg-variant)), url(../../assets/commercial.jpeg);
+}
 .service.service:hover {
     cursor: pointer;
     box-shadow: 1px 1px 0px 1px var(--color-primary), 1px 1px 1px 1px var(--color-bg-variant);
     border: 15px solid var(--color-bg-variant);
     transition: .8s;
 }
-.text {
+.service__text {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -43,8 +48,24 @@
     transform: translate(-50%, -50%);
     color: var(--color-primary);
 }
+@media screen and (max-width: 1500px) {
+    .service__text h1{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .service__text h1{
+        font-size: 1.75rem;
+    }
+}
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
+    #services {
+        padding: 100px 0 100px 0;
+    }
+    .container.services__container {
+    width: 75%;
+}
     .services__container {
         grid-template-columns: 1fr;
         gap: 4rem;
@@ -53,6 +74,9 @@
     .service {
         height: 50vh;
         width: 100%;
+    }
+    .service__text h1{
+        font-size: 3.5rem;
     }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
@@ -65,5 +89,8 @@
     .service {
         height: 30vh;
         width: 100%;
+    }
+    .service__text h1{
+        font-size: 2.5rem;
     }
 }

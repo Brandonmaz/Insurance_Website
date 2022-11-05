@@ -9,28 +9,28 @@ import {GiHouse} from 'react-icons/gi'
 import {FaUmbrella} from 'react-icons/fa'
 
 
-const data = [
-  {
-    image: CAR,
-    name: 'Auto',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
-  },
-  {
-    image: HOME,
-    name: 'Home',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
-  },
-  {
-    image: CAR,
-    name: 'Home',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
-  },
-  {
-    image: CAR,
-    name: 'Home',
-    info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
-  },
-]
+// const data = [
+//   {
+//     image: CAR,
+//     name: 'Auto',
+//     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+//   },
+//   {
+//     image: HOME,
+//     name: 'Home',
+//     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+//   },
+//   {
+//     image: CAR,
+//     name: 'Home',
+//     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+//   },
+//   {
+//     image: CAR,
+//     name: 'Home',
+//     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam! Provident, quas sapiente? Inventore, a eveniet! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure architecto exercitationem voluptatum consectetur, iste unde corporis vero animi repellat quas explicabo beatae hic magnam!'
+//   },
+// ]
 const Services = () => {
   return (
     <section id="services">
@@ -52,23 +52,28 @@ const Services = () => {
 
       <div className="container services__container">
         <article data-aos="fade-right" className="service service__auto">
-          <div className="text">
+          <div className="service__text">
           <h1>Auto</h1>
           </div>
         </article>
         <article data-aos="fade-down" className="service service__home">
-          <div className="text">
+          <div className="service__text">
           <h1>Home</h1>
           </div>
         </article>
         <article data-aos="fade-up" className="service service__life">
-          <div className="text">
+          <div className="service__text">
           <h1>Life</h1>
           </div>
         </article>
-        <article data-aos="fade-left" className="service service__umbrella">
-          <div className="text">
+        <article data-aos="fade-down" className="service service__umbrella">
+          <div className="service__text">
           <h1>Umbrella</h1>
+          </div>
+        </article>
+        <article data-aos="fade-left" className="service service__commercial">
+          <div className="service__text">
+          <h1>Commercial</h1>
           </div>
         </article>
       </div>

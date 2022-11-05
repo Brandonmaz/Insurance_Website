@@ -1,7 +1,7 @@
 #about {
     display: flex;
     position:relative;
-    background-image: url(../../assets/jelly-fish.gif);
+    /* background-image: url(../../assets/jelly-fish.gif); */
     /* background-image: url(../../assets/sparkle.gif); */
     background-position: right;
     background-size: 40% 100%;
@@ -16,15 +16,15 @@
     left:0;
     right:0;
     bottom:0;
-    clip-path: polygon(0% 0%, 100% 100%, 100% 100%, 1% 100%);
-    background: linear-gradient(20deg, transparent, var(--color-background), transparent);;
+    clip-path: polygon(100% 0%, 0% 100%, 100% 100%, 100% 0%);
+    background: url(../../assets/sparkle.gif);
 }
-.about__container {
+.container.about__container {
     display: grid;
     grid-template-columns: 80%;
-    gap: 10%;
+    width: 90%;
 }
-.about__cards {
+/* .about__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
@@ -48,9 +48,9 @@
     font-size: 1.5rem;
     color: var(--color-primary);
     text-shadow: .3px .3px var(--color-white);
-}
+} */
 .about__content {
-    margin: 10rem 0 0 0;
+    margin: 5rem 0 0 0;
 }
 .about__content p {
     margin: 2rem 0 2.6rem;
@@ -58,7 +58,7 @@
     font-size: 1.1rem;
 }
 .about__title {
-    font-size: 2rem;
+    width: 80% !important;
 }
 .mark__title {
     background-color: var(--color-bg-variant);
@@ -67,51 +67,151 @@
     padding: 10px;
     font-size: 1.25rem;
 }
-mark {
-    background-color: rgba(240, 128, 128, 0.575);
+.about__title {
+    animation: sliding-background 40s linear infinite;
+    background: url(../../assets/palm-tree.jpeg) no-repeat left/150%;
+    margin: auto;
+    height: auto;
+    text-align: left;
+    width: 100%;
 }
-hr.solid-one {
-    width: 55%;
+.about__title-h1 {
+    border: none;
+    background: white;
+    color: var(--color-primary);
+    letter-spacing: auto;
+    line-height: 120%;
+    margin-bottom: 1rem;
+    mix-blend-mode: lighten;
+    text-transform: uppercase;
+    text-shadow: 0 0 0px, 1px 1px white, 2px 2px black, 3px 3px black, 4px 4px black, 5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black, 9px 9px black, 10px 10px black, 11px 11px black, 12px 12px black, 13px 13px black, 14px 14px black;
+}
+.about__span-sm {
+    font-size: 3.5rem;
+    color: var(--color-white);
+}
+.about__span-md {
+    color: grey;
+    padding: 3rem;
+    font-size: 5rem;
+}
+.about__span-lg {
+    font-size: 6.5rem;
+    padding: 7rem;
+}
+.about__title-h1:before {
+    color: white;
+    content: attr(data-text);
+    margin-left: -1%;
+    margin-top: -1%;
+    position: absolute;
+}
+@keyframes sliding-background {
+    0%, 100% {
+        background-position: 0 40%;
+    }
+    50% {
+        background-position: 100% 40%;
+    }
+}
+.about__solid-one {
+    width: 63%;
     border-top: 3px solid var(--color-bg-variant);
 }
-hr.solid-two {
-    width: 115%;
+.about__solid-two {
+    width: 13%;
     border-top: 3px solid var(--color-bg-variant);
+}
+.about__solid-three {
+    padding: .5rem;
+    width: 60%;
+    margin: 0px 0px 0 300px;
+    border-top: 3px solid var(--color-bg-variant);
+}
+.about__solid-four {
+    padding: .5rem;
+    width: 60%;
+    margin: 0px 0px 0 100px;
+    border-top: 3px solid var(--color-bg-variant);
+}
+.about__solid-five {
+    padding: 2rem;
+    width: 60%;
+    margin: 0px 0px 0 500px;
+    border-top: 3px solid var(--color-bg-variant);
+}
+.about__content h2 {
+    color: black;
+    padding-bottom: -200px;
 }
 /*=========== MEDIA QUERIES (Medium devices, tablets) ========*/
 @media screen and (max-width: 1024px) {
     .about__container {
         grid-template-columns: 1fr;
     }
-    #about {
-    /* background-image: url(../../assets/jelly-fish.gif); */
-    background-position:top -100px right -50px;
-    background-size: 100% 30%;;
-    background-repeat: no-repeat;
-    z-index: 0;
+    .about__container > div {
+        padding-top: 4rem;
     }
-    .about__content p {
-        margin: 1rem 0 1.5rem
+    .about__title {
+    width: 100% !important;
+    }
+    .experience__title-h1 {
+        line-height: 105%;
+    }
+    .about__span-sm {
+    font-size: 1.5rem;
+    }
+    .about__span-md {
+        color: var(--color-white);
+        font-size: 3rem;
+        padding-right: 30px;
+    }
+    .about__span-lg {
+        font-size: 5rem;
+    }
+    .about__solid-three {
+    margin: 0px 0px 0 150px;
+    }
+    .about__solid-four {
+    margin: 0px 0px 0 10px;
+    }
+    .about__solid-five {
+    margin: 0px 0px 0 250px;
     }
 }
 /*=========== MEDIA QUERIES (Small devices, mobilephone) ========*/
 @media screen and (max-width: 600px) {
     .about__container {
-        grid-template-columns: 1fr;
+        height: auto;
     }
-    #about {
-    /* background-image: url(../../assets/jelly-fish.gif); */
-    background-position:top -100px right 50px;
-    background-size: 100% 25%;
-    background-repeat: no-repeat;
-    z-index: 0;
+    .about__container > div {
+        margin: 0rem;
+        width: 120%;
     }
-    .about__cards {
-        grid-template-columns: 1fr;
-        margin: 1rem;
+    /* .about__title {
+    width: 100% !important;
+    } */
+    .about__title-h1 {
+        line-height: 70%;
+        padding-bottom: 10px;
     }
-    .mark__title {
-        text-shadow: .05px .05px var(--color-white);
+    .about__span-sm {
+    font-size: 1rem;
     }
-
+    .about__span-md {
+        color: var(--color-white);
+        font-size: 2.2rem;
+    }
+    .about__span-lg {
+        font-size: 3rem;
+    }
+    .about__solid-three {
+    margin: 0px 0px 0 80px;
+    }
+    .about__solid-four {
+    margin: 0px 0px 0 10px;
+    }
+    .about__solid-five {
+    margin: 0px 0px 0 150px;
+    }
 }

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import './nav.css'
+import LOGO from '../../assets/farmers-logo.png'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {GiBookmark} from 'react-icons/gi'
 import {TbHeartHandshake} from 'react-icons/tb'
 import {FiPhoneCall} from 'react-icons/fi'
-import CTA from './CTA'
 
 const Navbar = () => {
   const[activeNav, setActiveNav] = useState('#')
@@ -23,15 +23,15 @@ window.addEventListener('scroll', changeBackground)
   return (
     <nav className={navbar ? 'navbar active' : 'navbar'}> 
       <div className="nav-wrapper">
-        {/* <div className="logo">
-          <a href="#home"><i className="fas fas-chess-chess-knight">Logo</i></a>
-        </div> */}
           <ul id="menu">
             <li><a href="#" onClick={()=> setActiveNav('#')}className={activeNav === '#' ? 'active' : ''}><span className="menu__words">home</span><span className="menu__icons"><AiOutlineHome/></span></a></li>
             <li><a href="#about" onClick={()=> setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><span className="menu__words">about</span><span className="menu__icons"><AiOutlineUser/></span></a></li>
             <li><a href="#services" onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><span className="menu__words">services</span><span className="menu__icons"><TbHeartHandshake/></span></a></li>
             <li><a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><span className="menu__words">community</span><span className="menu__icons"><GiBookmark/></span></a></li>
             <li><a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><span className="menu__words">contact</span><span className="menu__icons"><FiPhoneCall/></span></a></li>
+            <div className="logo">
+          <a href="https://www.farmers.com/" rel="noreferrer" target="_blank"><img src={LOGO} alt=""/></a>
+        </div>
           </ul>
         </div>
         <div className="nav-wrapper">

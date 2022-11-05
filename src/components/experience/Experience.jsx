@@ -9,10 +9,11 @@ const Community = () => {
     <div className="container experience__container">
         <div data-aos="fade-up" className="experience__content">
           <div className="experience__title">
-            <h1 className="experience__title-h1"><span className='title__span-md'>Farmers</span><span className='title__span-sm'>and<br/>the</span><span className="title__span-lg">Community</span></h1>
-            <hr className="experience__solid-three"></hr>
+            <h1 className="experience__title-h1"><span className='experience__span-md'>Farmers</span><span className='experience__span-sm'>and<br/>the</span><span className="experience__span-lg">Community</span></h1>
           </div>
-          
+          <hr className="experience__solid-three"></hr>
+          <hr className="experience__solid-four"></hr>
+          <hr className="experience__solid-five"></hr>
           {/* <div className="experience__cards">
             <div className="experience__card">
               <h5>Experience</h5>
