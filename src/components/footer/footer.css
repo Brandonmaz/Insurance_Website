@@ -14,10 +14,21 @@ footer a {
 footer a:hover {
     color: var(--color-primary);
 }
-.footer__logo {
-    font-size: 2rem;
+#footer.footer__logo {
+    align-items: center;
+    display: inline-block;
+}
+.footer__logo h6{
     font-weight: 500;
-    margin-bottom: 2rem;
+}
+.owner__name {
+    font-size: 1rem;
+    color: gray;
+    margin-bottom:2rem;
+}
+.farmers__logo {
+    margin-bottom: 1rem;
+    width: 200px;
     display: inline-block;
 }
 .permalinks {
@@ -33,6 +44,9 @@ footer a:hover {
     gap: 1rem;
     margin-bottom: 4rem;
 }
+.farmers__logo {
+        width: 150px;
+    }
 .footer__social-icon {
     font-size: 2rem;
 }
@@ -51,6 +65,9 @@ footer a:hover {
     background: transparent;
     border-color: var(--color-primary);
 }
+.owner__name:hover {
+    color: var(--color-primary) !important;
+}
 .footer__copyright {
     margin-bottom: 8rem;
     color: var(--color-white);
@@ -67,5 +84,8 @@ footer a:hover {
     }
     #footer {
         height: auto;
+    }
+    .farmers__logo {
+        width: 100px;
     }
 }

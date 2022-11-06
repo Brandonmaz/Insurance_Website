@@ -29,9 +29,6 @@ window.addEventListener('scroll', changeBackground)
             <li><a href="#services" onClick={()=> setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><span className="menu__words">services</span><span className="menu__icons"><TbHeartHandshake/></span></a></li>
             <li><a href="#experience" onClick={()=> setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><span className="menu__words">community</span><span className="menu__icons"><GiBookmark/></span></a></li>
             <li><a href="#contact" onClick={()=> setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><span className="menu__words">contact</span><span className="menu__icons"><FiPhoneCall/></span></a></li>
-            <div className="logo">
-          <a href="https://www.farmers.com/" rel="noreferrer" target="_blank"><img src={LOGO} alt=""/></a>
-        </div>
           </ul>
         </div>
         <div className="nav-wrapper">

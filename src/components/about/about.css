@@ -91,7 +91,7 @@
     color: var(--color-white);
 }
 .about__span-md {
-    color: grey;
+    color: var(--color-white);
     padding: 3rem;
     font-size: 5rem;
 }
@@ -150,24 +150,24 @@
         grid-template-columns: 1fr;
     }
     .about__container > div {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     .about__title {
     width: 100% !important;
     }
-    .experience__title-h1 {
-        line-height: 105%;
+    .about__title-h1 {
+        line-height: 125%;
     }
     .about__span-sm {
-    font-size: 1.5rem;
+        font-size: 2.75rem;
     }
     .about__span-md {
         color: var(--color-white);
-        font-size: 3rem;
+        font-size: 3.75rem;
         padding-right: 30px;
     }
     .about__span-lg {
-        font-size: 5rem;
+        font-size: 4.75rem;
     }
     .about__solid-three {
     margin: 0px 0px 0 150px;
@@ -188,22 +188,19 @@
         margin: 0rem;
         width: 120%;
     }
-    /* .about__title {
-    width: 100% !important;
-    } */
     .about__title-h1 {
-        line-height: 70%;
+        line-height: 90%;
         padding-bottom: 10px;
     }
     .about__span-sm {
-    font-size: 1rem;
+    font-size: 2rem;
     }
     .about__span-md {
         color: var(--color-white);
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     .about__span-lg {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     .about__solid-three {
     margin: 0px 0px 0 80px;

@@ -5,7 +5,6 @@ import 'aos/dist/aos.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FiPhoneCall} from 'react-icons/fi'
 import {BsChatSquareText} from 'react-icons/bs'
-// import {FaFacebookMessenger} from 'react-icons/fa'
 import {BsWhatsapp} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
 
@@ -25,14 +24,12 @@ const Contact = () => {
           <article className="contact__option">
             <HiOutlineMail className='contact__option-icon'/>
             <h4>Email</h4>
-            <h5>dummyemail@yahoo.com</h5>
-            <a href="mailto: dummyemail@yahoo.com" rel='noreferrer' target='_blank'>Send a message</a>
+            <a href="mailto: brandon.dsouza@farmersagency.com" rel='noreferrer' target='_blank'>Send an email</a>
           </article>
           <article className="contact__option">
             <BsChatSquareText className='contact__option-icon'/>{' '}-{' '}-{' '}-{' '}<FiPhoneCall className='contact__option-icon'/>
             <h4>Phone</h4>
-            <h5>1234567890</h5>
-            <a href="mailto: dummyemail@yahoo.com" rel='noreferrer' target='_blank'>Send a message</a>
+            <a href="sms:4088571993" rel='noreferrer' target='_blank'>Send a text</a>
           </article>
           {/* <article className="contact__option">
             <FaFacebookMessenger className='contact__option-icon'/>
@@ -43,7 +40,6 @@ const Contact = () => {
           <article className="contact__option">
             <BsWhatsapp className='contact__option-icon'/>
             <h4>WhatsApp</h4>
-            <h5>Name of Person</h5>
             <a href="https://wa.me/14088571993" rel='noreferrer' target='_blank'>Send a message</a>
           </article>
         </div>
