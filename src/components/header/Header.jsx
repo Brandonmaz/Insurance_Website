@@ -3,6 +3,7 @@
 
 import React, { useEffect } from 'react'
 import Aos from 'aos'
+import LOGO from '../../assets/farmers-logo.png'
 import 'aos/dist/aos.css'
 import './header.css'
 import HeaderSocials from './HeaderSocials'
@@ -15,8 +16,8 @@ const Header = () => {
     <section id="header">
       <header>
         <div className="container header__container">
-          <h2 className="text-light">Brandon Mazikowski</h2>
-          <h1>Farmers Insurance Agency Producer</h1>
+            <h2><span>Farmers</span> Agency Producer</h2>
+            <h1>Brandon Mazikowski</h1>
           <HeaderSocials/>
           {/* <div className="me">
             <img src={ME} alt="me" className="" />
